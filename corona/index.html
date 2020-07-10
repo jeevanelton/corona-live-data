@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORONA LIVE</title>
+    <link rel="icon" type="image/svg" href="./assets/virus-solid.svg">
+    <!-- For apple devices -->
+    <link rel="apple-touch-icon" type="image/svg" href="./assets/virus-solid.svg" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e16a3247f5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="corona-title">
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="row">
+                <div class="col-ls-12 ">
+                    <h1>Coronavirus (COVID-19)</h1>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="search-bar ">
+        <div class="container d-flex justify-content-center">
+            <div class="row">
+                <div class="col-ls-12 input-group">
+                    <form class="form-inline example" id="searchform" onSubmit="return false;">
+                        <div class="input-group mb-3">
+                            <input class="form-control " id="search" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <div class="input-group-append">
+                                <button type="button" id="searchClick" class="btn btn-outline-dark" required
+                                    type="search"><i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="total-corona-cases">
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="row">
+                <div class="col-ls-12 ">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-center ">
+                            <div class="d-inline  text-black">
+                                <h5 class="p-2">Confrimed</h5>
+                                <p id="confirmed"></p>
+                            </div>
+                            <div class="d-inline text-black">
+                                <h5 class="p-2">Recovered</h5>
+                                <p id="Recovered"></p>
+
+                            </div>
+                            <div class="d-inline text-black">
+                                <h5 class="p-2">Deaths</h5>
+                                <p id="Deaths"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="database-table">
+        <div class="container-fluid d-flex justify-content-center">
+            <div class="row">
+                <div class="col-ls-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <!--Table-->
+                            <table id="tablePreview" class="table table-hover">
+                                <!--Table head-->
+                                <thead>
+                                    <tr>
+
+                                        <th>country</th>
+                                        <th>confirmed</th>
+                                        <th>Recovered</th>
+                                        <th>Deaths</th>
+
+                                    </tr>
+                                </thead>
+                                <!--Table head-->
+                                <!--Table body-->
+                                <tbody id="tablerow">
+
+                                </tbody>
+                                <!--Table body-->
+                            </table>
+                            <!--Table-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<footer>
+    <h4><i class="far fa-copyright"></i>copyright to jeevan elton</h4>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</html>
